@@ -35,3 +35,53 @@ VALUES
 ('19','LET4015','LETICIA','M','2','leticia@yahoo.com','655-143-4019','BLACKBERRY','UNEFON','100','1'),
 ('20','LUI1076','LUIS','H','3','luis2@live.com','655-100-5085','SONY','UNEFON','150','1'),
 ('21','HUG5441','HUGO','H','2','hugo@live.com','655-137-3935','MOTOROLA','AT&T','500','1');
+
+
+1.select nombre from Usuarios;
+2.select max(saldo) from Usuarios where sexo='M';
+3.select nombre, telefono from Usuarios where marca='NOKIA'|| marca='BLACKBERRY' || marca='SONY';
+4.select count(*) from Usuarios where saldo='0' || activo=false;
+5.select usuario from Usuarios where nivel=1 || nivel=2 || nivel=3;
+6.select telefono from Usuarios where saldo<=300;
+7.select sum(saldo) from Usuarios where compania = 'NEXTEL';
+8.select compania ,count(*) from Usuarios Group by compania ;
+9.select nivel ,count(*) from Usuarios Group by nivel ;
+10.select usuario from Usuarios where nivel =2;
+11.select email from Usuarios where email LIKE '%gmail.com';
+12.select nombre, usuario from Usuarios where marca IN('LG', 'SAMSUNG' , 'MOTOROLA');
+13.select nombre, usuario from Usuarios where marca NOT IN('LG', 'SAMSUNG');
+14.select nombre, usuario from Usuarios where compania='IUSACELL';
+15.select telefono, usuario from Usuarios where compania <> 'TELCEL';
+16.select AVG(saldo) from Usuarios where marca='NOKIA';
+17.select usuario, telefono from Usuarios where compania IN ('IUSACELL', 'AXEL');
+18.select email  from Usuarios where email NOT LIKE '%yahoo.com';
+19.select usuario, telefono from Usuarios where compania NOT IN ('TELCEL', 'IUSACELL');
+20.select usuario, telefono from Usuarios where compania= 'UNEFON';
+21.select marca from Usuarios ORDER BY marca DESC;
+22.SELECT DISTINCT compania FROM Usuarios ORDER BY RAND();
+23.Select usuario from Usuarios where nivel IN(0 , 2);
+24.Select AVG (saldo) from Usuarios where marca ='LG';
+25.select usuario from Usuarios where nivel IN (1, 3);
+26.select nombre, telefono from Usuarios where marca <> 'BLACKBERRY';
+27.select usuario from Usuarios where nivel =3;
+28.select usuario from Usuarios where nivel =0;
+29.select usuario from Usuarios where nivel =1;
+30.select sexo, count(*) from Usuarios group by sexo;
+31.select usuario, telefono from Usuarios where compania='AT&T';
+32.select compania from Usuarios order by compania DESC;
+33.select usuario from Usuarios where activo=false;
+34.select telefono from Usuarios where saldo =0;
+35.select min(saldo) from Usuarios where sexo='H';
+36.select telefono from Usuarios where saldo>=300;
+37.select marca, count(*) from Usuarios Group by marca;
+38.select nombre,telefono from Usuarios where marca <> 'LG';
+39.select distinct compania from Usuarios Order by compania;
+40.select sum(saldo) from Usuarios where compania='UNEFON';
+41.select email from Usuarios where email like '%hotmail.com';
+42.select nombre from Usuarios where saldo=0 || activo = false;
+43.select usuario, telefono from Usuarios where compania IN ('IUSACELL' , 'TELCEL');
+44.select distinct marca from Usuarios Order by marca ;
+45.select distinct marca from Usuarios Order by Rand() ;
+46.select usuario, telefono from Usuarios where compania IN ('IUSACELL' , 'UNEFON');
+47.select usuario, telefono from Usuarios where marca NOT IN('MOTOROLA', 'NOKIA');
+48.select sum(saldo) from Usuarios where compania='TELCEL';
